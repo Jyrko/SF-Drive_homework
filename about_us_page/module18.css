@@ -68,12 +68,6 @@
 
 
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 h1 {
   /* H1 Desktop */
   font-family: Roboto;
@@ -162,6 +156,10 @@ button {
   color: #1B1B1B;
 }
 
+#burger_menu_button {
+  display: none;
+}
+
 #login_button:hover {
   color: #adedbd;
   border-color: #adedbd;
@@ -202,10 +200,15 @@ nav a {
 
 main img {
   padding-top: 170px;
-  margin-left: calc(50% - 400px);
 }
 
+.about-us-img {
+  margin: 0 auto;
+}
 
+#wrapper_about_us {
+  text-align: center;
+}
 
 #contacts {
   margin-top:160px;
@@ -260,11 +263,15 @@ hr.solid {
   margin-right: 43px;
 }
 
+#team_mobile {
+  display: none;
+}
 .wrapper_team_row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  margin: 0 240px;
 }
 
 .wrapper_team > div {
@@ -279,6 +286,8 @@ hr.solid {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  margin-left: 20px;
 }
 
 
@@ -299,7 +308,6 @@ footer {
   font-size: 16px;
   line-height: 19px;
   color: #fff;
-  margin-left: 20px;
   opacity: 0.4;
 }
 
@@ -309,6 +317,69 @@ footer {
   margin-right: 20px;
 }
 
+.icons {
+  margin-right: 20px;
+}
+
 .icon:hover {
   color: #e0e0e0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: 32px;
+  }
+  .h2 {
+    font-size: 24px;
+  }
+  header {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top:20px;
+  }
+
+  #logo_link {
+    margin-left: 5px;
+  }
+  #navigation {
+    display: none;
+  }
+
+  #burger_menu_button {
+    display: inline;
+    float: right;
+  }
+  #about_us > p {
+    font-size: 16px;
+  }
+
+  .wrapper_contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  hr {
+    display: none;
+  }
+  #team {
+    display: none;
+  }
+  #team_mobile {
+    display: block;
+  }
+  .wrapper_team_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .wrapper_team_row > div {
+    text-align: center;
+    margin: 0 40px;
+  }
+
 }
