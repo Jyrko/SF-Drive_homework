@@ -1,0 +1,26 @@
+{
+  "name": "sf_drive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss_about": "node-sass about_us_page/scss/all.scss -o about_us_page/css",
+    "scss_faq": "node-sass FAQ_page/scss -o FAQ_page/css"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jyrko/SF-Drive_homework.git"
+  },
+
+  "author": "Yuriy D",
+  "license": "ISC",
+
+  "bugs": {
+    "url": "https://github.com/Jyrko/SF-Drive_homework/issues"
+  },
+
+  "homepage": "https://github.com/Jyrko/SF-Drive_homework#readme"
+}
