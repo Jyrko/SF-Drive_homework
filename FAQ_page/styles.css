@@ -69,6 +69,9 @@ body {
 }
 main img {
   padding-top: 170px;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
 }
 h1 {
   /* H1 Desktop */
@@ -187,6 +190,9 @@ nav a {
 /* Template Header END */
 
 /* Style the button that is used to open and close the collapsible content */
+.FAQ_img_wrapper {
+  text-align: center;
+}
 
 .FAQ_wrapper {
   display: flex;
@@ -218,12 +224,24 @@ nav a {
   background-color: rgba(97, 161, 153, 0.1);
 }
 
+.active {
+  color: #61A199;
+}
+
 /* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+}
+
+.content p {
+  width: 80%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
 }
 
 .collapsible:after {
@@ -286,3 +304,45 @@ footer {
   color: #e0e0e0;
 }
 /* Template Footer END */
+
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: 32px;
+  }
+  .h2 {
+    font-size: 24px;
+  }
+  header {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top:20px;
+  }
+
+  #logo_link {
+    margin-left: 5px;
+  }
+  #navigation {
+    display: none;
+  }
+
+  #burger_menu_button {
+    display: inline;
+    float: right;
+  }
+  .FAQ > p {
+    font-size: 16px;
+  }
+
+  .FAQ_wrapper {
+    margin: 30px 20px;
+  }
+
+  .FAQ_wrapper button {
+    font-size: 14px;
+  }
+
+  .content p {
+    font-size: 14px;
+    width: 100%;
+  }
+}
