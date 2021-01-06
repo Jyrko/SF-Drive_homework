@@ -6,8 +6,8 @@
 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss_about": "node-sass about_us_page/scss/all.scss -o about_us_page/css",
-    "scss_faq": "node-sass FAQ_page/scss -o FAQ_page/css"
+    "scss_about": "sass --watch about_us_page/scss/all.scss:about_us_page/css/all.css",
+    "scss_faq": "sass --watch FAQ_page/scss/all.scss:FAQ_page/css/all.css"
   },
 
   "repository": {
