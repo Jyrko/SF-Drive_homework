@@ -3,24 +3,37 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss_about": "sass --watch about_us_page/scss/all.scss:about_us_page/css/all.css",
-    "scss_faq": "sass --watch FAQ_page/scss/all.scss:FAQ_page/css/all.css"
+    "scss_faq": "sass --watch FAQ_page/scss/all.scss:FAQ_page/css/all.css",
+    "start": "webpack serve",
+    "build": "webpack build"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jyrko/SF-Drive_homework.git"
   },
-
   "author": "Yuriy D",
   "license": "ISC",
-
   "bugs": {
     "url": "https://github.com/Jyrko/SF-Drive_homework/issues"
   },
-
-  "homepage": "https://github.com/Jyrko/SF-Drive_homework#readme"
+  "homepage": "https://github.com/Jyrko/SF-Drive_homework#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.16.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
 }
